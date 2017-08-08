@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AnagramsVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AnagramsVC" customModule="Anagrams" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v0g-z2-WX9">
+                                <rect key="frame" x="16" y="81" width="343" height="221.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Joy-hW-CTL">
+                                <rect key="frame" x="0.0" y="318.5" width="375" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuy-ZD-Jxo">
+                                        <rect key="frame" x="112.5" y="0.0" width="150" height="30"/>
+                                        <color key="backgroundColor" red="0.28867784140000002" green="0.41562312839999999" blue="0.61072617770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Process">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="processButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="NzB-tm-tga"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="fuy-ZD-Jxo" firstAttribute="centerX" secondItem="Joy-hW-CTL" secondAttribute="centerX" id="TMR-JQ-Nu3"/>
+                                    <constraint firstAttribute="height" constant="30" id="coU-Mc-Jbb"/>
+                                    <constraint firstItem="fuy-ZD-Jxo" firstAttribute="centerY" secondItem="Joy-hW-CTL" secondAttribute="centerY" id="hGE-uY-uRG"/>
+                                    <constraint firstItem="fuy-ZD-Jxo" firstAttribute="width" secondItem="Joy-hW-CTL" secondAttribute="width" multiplier="0.4" id="zR8-eW-WOj"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oQF-0x-Uiw">
+                                <rect key="frame" x="16" y="364.5" width="343" height="278.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    Enter Your Input" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAm-MN-za8">
+                                <rect key="frame" x="24" y="36" width="151" height="29"/>
+                                <color key="backgroundColor" red="0.2614561319" green="0.38485884669999998" blue="0.55509781840000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="Bda-du-4tW"/>
+                                    <constraint firstAttribute="height" constant="29" id="Lgc-HZ-K1g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oQF-0x-Uiw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6VL-QR-rXo"/>
+                            <constraint firstItem="v0g-z2-WX9" firstAttribute="top" secondItem="LAm-MN-za8" secondAttribute="bottom" constant="16" id="AIh-P2-ZU0"/>
+                            <constraint firstItem="Joy-hW-CTL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GMp-ed-TFG"/>
+                            <constraint firstItem="oQF-0x-Uiw" firstAttribute="top" secondItem="Joy-hW-CTL" secondAttribute="bottom" constant="16" id="Goi-Y0-xDW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oQF-0x-Uiw" secondAttribute="bottom" constant="24" id="OJ2-sE-v0X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oQF-0x-Uiw" secondAttribute="trailing" id="RuE-X2-dmN"/>
+                            <constraint firstItem="Joy-hW-CTL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TL4-Kx-gQn"/>
+                            <constraint firstItem="Joy-hW-CTL" firstAttribute="top" secondItem="v0g-z2-WX9" secondAttribute="bottom" constant="16" id="WkJ-sx-3kd"/>
+                            <constraint firstItem="v0g-z2-WX9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XYa-kk-J5P"/>
+                            <constraint firstItem="Joy-hW-CTL" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="aTC-T9-Scx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v0g-z2-WX9" secondAttribute="trailing" id="ahm-sP-c6E"/>
+                            <constraint firstItem="LAm-MN-za8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="bH0-LH-Xfn"/>
+                            <constraint firstItem="LAm-MN-za8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="s3z-Xz-gMH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextView" destination="v0g-z2-WX9" id="sF6-Ug-mvx"/>
+                        <outlet property="outputTextView" destination="oQF-0x-Uiw" id="qgy-cQ-Qxm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
